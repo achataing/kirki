@@ -27,7 +27,7 @@ If for some reason the URLs are not properly detected in your setup, you can add
 ```php
 if ( ! function_exists( 'my_theme_kirki_update_url' ) ) {
     function my_theme_kirki_update_url( $config ) {
-        $config['url_path'] = get_stylesheet_directory_uri() . '/inc/kirki/';
+        $config['url_path'] = get_template_directory_uri() . '/includes/kirki/';
         return $config;
     }
 }
